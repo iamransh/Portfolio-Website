@@ -110,7 +110,7 @@ export default function HeroSection() {
         w="30px"
         h="30px"
         cursor="pointer"
-        display={display}
+        display={["none", "none", { display }]}
         onClick={handelClick}
       />
     </Flex>
