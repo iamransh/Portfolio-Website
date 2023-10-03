@@ -38,7 +38,7 @@ export default function HeroSection() {
         data-aos="fade-up"
       >
         <Text fontWeight={"medium"} className="hello" color="rgb(85,85,85)">
-          Hello, I'm
+          {"Hello, I'm"}
         </Text>
         <Text fontWeight={"semibold"} className="name">
           Pranav Srivastav
