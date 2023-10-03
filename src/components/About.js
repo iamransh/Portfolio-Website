@@ -6,7 +6,7 @@ import experience from "../assets/experience.png";
 
 export default function About() {
   return (
-    <Stack w="100%" spacing={0} px="10%" pb="50px">
+    <Stack w="100%" spacing={0} px="10%" pb="50px" data-aos="fade-up">
       <Text
         textAlign={"center"}
         fontSize={["12px", "14px", "17px"]}

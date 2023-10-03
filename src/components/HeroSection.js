@@ -1,17 +1,11 @@
 import { Flex, Stack, Text, Image, Button } from "@chakra-ui/react";
 import img from "../assets/image.jpg";
 import React, { useEffect, useState } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import arrow from "../assets/arrow.png";
 
 export default function HeroSection() {
-  useEffect(() => {
-    Aos.init({ duration: 3000 });
-  }, []);
-
   const [display, setDisplay] = useState("flex");
 
   const handelClick = () => {
@@ -31,7 +25,6 @@ export default function HeroSection() {
         // minW={["150px", "250px", "400px"]}
         // minH={["165px", "265px", "415px"]}
         className="image_box"
-        data-aos="fade-down"
       >
         <Image
           className="hero_img"
@@ -40,6 +33,7 @@ export default function HeroSection() {
           w={["49vw", "32vw", "24vw"]}
           h={["50vw", "33vw", "25vw"]}
           borderRadius="50%"
+          data-aos="fade-down"
         />
       </Flex>
       <Stack

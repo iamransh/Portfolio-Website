@@ -1,7 +1,5 @@
 import { Flex, Text, Stack, Link, Image } from "@chakra-ui/react";
 import React, { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import { useRouter } from "next/router";
 import {
   Drawer,
@@ -14,9 +12,6 @@ import {
 import icon from "../assets/hamburgerIcon.svg";
 
 export default function Navbar() {
-  useEffect(() => {
-    Aos.init({ duration: 3000 });
-  }, []);
   const router = useRouter();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const NavBarLinks = [
