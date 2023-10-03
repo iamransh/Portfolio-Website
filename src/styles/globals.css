@@ -60,6 +60,9 @@
     width:390px;
     height:400px;
 }
+.socials{
+    padding-left: 100px;
+}
 
 @media(max-width:1200px){
     .navbar_link{
@@ -106,6 +109,9 @@
     .about_img{
         width:290px;
         height:300px;
+    }
+    .socials{
+        padding-left: 0px;
     }
 }
 

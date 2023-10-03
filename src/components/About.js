@@ -1,6 +1,8 @@
 import React from "react";
 import { Flex, Stack, Text, Image, Button } from "@chakra-ui/react";
 import img from "../assets/image.jpg";
+import education from "../assets/education.png";
+import experience from "../assets/experience.png";
 
 export default function About() {
   return (
@@ -29,7 +31,7 @@ export default function About() {
           <Flex
             justify={["space-evenly"]}
             align="center"
-            py="30px"
+            py="20px"
             flexDir={["column", "column", "row"]}
           >
             <Stack
@@ -41,6 +43,7 @@ export default function About() {
               minW="200px"
               mb={["20px", "20px", "0px"]}
             >
+              <Image src={experience.src} alt="experience" w="50px" h="50px" />
               <Text fontSize={"25px"} fontWeight={"semibold"}>
                 Experience
               </Text>
@@ -59,6 +62,7 @@ export default function About() {
               borderRadius={"30px"}
               minW="200px"
             >
+              <Image src={education.src} alt="education" w="50px" h="50px" />
               <Text fontSize={"25px"} fontWeight={"semibold"}>
                 Education
               </Text>
