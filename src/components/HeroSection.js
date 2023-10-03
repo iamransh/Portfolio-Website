@@ -12,7 +12,7 @@ export default function HeroSection() {
     Aos.init({ duration: 3000 });
   }, []);
 
-  const [display, setDisplay] = useState("block");
+  const [display, setDisplay] = useState("flex");
 
   const handelClick = () => {
     setDisplay("none");
@@ -110,7 +110,7 @@ export default function HeroSection() {
         w="30px"
         h="30px"
         cursor="pointer"
-        display={["none", "none", { display }]}
+        display={["none", "none", display]}
         onClick={handelClick}
       />
     </Flex>
