@@ -72,7 +72,7 @@ export default function Navbar() {
         w="100%"
         // position="sticky"
         // top="0"
-        px={["15%"]}
+        px={["10%", "15%", "15%"]}
         py="20px"
         zIndex={100}
         data-aos="fade-down"
@@ -82,12 +82,7 @@ export default function Navbar() {
         <Flex fontWeight={"semibold"} className="logo">
           Pranav Srivastav
         </Flex>
-        <Flex
-          w="50%"
-          fontSize={"18px"}
-          fontWeight={"medium"}
-          justify={"space-evenly"}
-        >
+        <Flex justify={"space-evenly"} className="links">
           {NavBarLinks.map((link, index) => (
             <Flex key={index}>
               <Text
@@ -111,7 +106,7 @@ export default function Navbar() {
             alt="icon"
             color={"white"}
             className="hamburgerIcon"
-            w="70px"
+            w={["50px", "70px", "70px"]}
           />
         </Flex>
       </Flex>

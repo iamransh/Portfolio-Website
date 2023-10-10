@@ -21,8 +21,11 @@
     display: none;
 }
 .logo{
-    width:50%;
+    width:40%;
     font-size: 2.5vw;
+}
+.links{
+    width:60%;
 }
 
 .hero{
@@ -50,7 +53,7 @@
     font-size: 3vw;
 }
 
-.about{
+.aboutme{
     flex-direction: row;
 }
 .about_img_box{
@@ -72,8 +75,11 @@
         display:flex;
     }
     .logo{
-        width: 100%;
+        width: 80%;
         font-size: 3.5vw;
+    }
+    .links{
+        width:20%;
     }
     .hero{
         flex-direction: column;
@@ -99,7 +105,7 @@
     .web{
         font-size: 3.5vw;
     }
-    .about{
+    .aboutme{
         flex-direction: column;
     }
     .about_img_box{

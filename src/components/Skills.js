@@ -7,6 +7,7 @@ import {
   CircularProgress,
   CircularProgressLabel,
 } from "@chakra-ui/progress";
+// import ApexCharts from "apexcharts";
 
 export default function Skills() {
   return (
@@ -15,14 +16,20 @@ export default function Skills() {
         textAlign={"center"}
         fontSize={["12px", "14px", "17px"]}
         color="rgb(85,85,85)"
+        data-aos="zoom-in"
       >
         Explore My
       </Text>
-      <Text textAlign={"center"} className="name" fontWeight={"bold"}>
+      <Text
+        textAlign={"center"}
+        className="name"
+        fontWeight={"bold"}
+        data-aos="zoom-in"
+      >
         Skills
       </Text>
-      <Stack w="100%" py={["10px", "20px", "50px"]}>
-        <Stack w="100%">
+      {/* <Stack w="100%" py={["10px", "20px", "50px"]}>
+        <Stack w="100%" data-aos="zoom-in">
           <Text
             fontSize={["17px", "20px", "24px"]}
             fontWeight={"medium"}
@@ -30,8 +37,8 @@ export default function Skills() {
           >
             Technical Skills
           </Text>
-          <Flex w="100%" py="20px">
-            <Stack w="50%" align={"center"}>
+          <Flex w="100%" py="20px" flexDir={["column", "column", "row"]}>
+            <Stack w={["100%", "100%", "50%"]} align={"center"}>
               <Stack w="80%" py="10px">
                 <Image src={react.src} alt="react" w="40px" h="30px" />
                 <Flex justify={"space-between"} w="60%">
@@ -104,8 +111,6 @@ export default function Skills() {
                   isAnimated
                 />
               </Stack>
-            </Stack>
-            <Stack w="50%" align={"center"}>
               <Stack w="80%" py="10px">
                 <Image src={react.src} alt="react" w="40px" h="30px" />
                 <Flex justify={"space-between"} w="70%">
@@ -124,6 +129,8 @@ export default function Skills() {
                   isAnimated
                 />
               </Stack>
+            </Stack>
+            <Stack w={["100%", "100%", "50%"]} align={"center"}>
               <Stack w="80%" py="10px">
                 <Image src={react.src} alt="react" w="40px" h="30px" />
                 <Flex justify={"space-between"} w="80%">
@@ -160,10 +167,64 @@ export default function Skills() {
                   isAnimated
                 />
               </Stack>
+              <Stack w="80%" py="10px">
+                <Image src={react.src} alt="react" w="40px" h="30px" />
+                <Flex justify={"space-between"} w="90%">
+                  <Text fontWeight={"medium"} fontSize={"18px"}>
+                    Chakra UI
+                  </Text>
+                  <Text fontWeight={"medium"}>90%</Text>
+                </Flex>
+                <Progress
+                  value={90}
+                  sx={{ alignSelf: "stretch" }}
+                  size="xs"
+                  // color="black"
+                  colorScheme="gray"
+                  hasStripe
+                  isAnimated
+                />
+              </Stack>
+              <Stack w="80%" py="10px">
+                <Image src={react.src} alt="react" w="40px" h="30px" />
+                <Flex justify={"space-between"} w="80%">
+                  <Text fontWeight={"medium"} fontSize={"18px"}>
+                    Bootstrap
+                  </Text>
+                  <Text fontWeight={"medium"}>80%</Text>
+                </Flex>
+                <Progress
+                  value={80}
+                  sx={{ alignSelf: "stretch" }}
+                  size="xs"
+                  // color="black"
+                  colorScheme="gray"
+                  hasStripe
+                  isAnimated
+                />
+              </Stack>
+              <Stack w="80%" py="10px">
+                <Image src={react.src} alt="react" w="40px" h="30px" />
+                <Flex justify={"space-between"} w="80%">
+                  <Text fontWeight={"medium"} fontSize={"18px"}>
+                    Tailwind
+                  </Text>
+                  <Text fontWeight={"medium"}>80%</Text>
+                </Flex>
+                <Progress
+                  value={80}
+                  sx={{ alignSelf: "stretch" }}
+                  size="xs"
+                  // color="black"
+                  colorScheme="gray"
+                  hasStripe
+                  isAnimated
+                />
+              </Stack>
             </Stack>
           </Flex>
         </Stack>
-        <Stack w="100%">
+        <Stack w="100%" data-aos="zoom-in">
           <Text
             fontSize={["17px", "20px", "24px"]}
             fontWeight={"medium"}
@@ -172,7 +233,31 @@ export default function Skills() {
             Professional Skills
           </Text>
         </Stack>
-      </Stack>
+      </Stack> */}
+      <Flex w="100%" justify={"space-between"}>
+        <Stack w="48%" py="15px" border="1px solid black">
+          <Text
+            textAlign={"center"}
+            fontSize={"30px"}
+            fontWeight={"semibold"}
+            color="rgb(85,85,85)"
+          >
+            Frontend Development
+          </Text>
+          <Flex></Flex>
+        </Stack>
+        <Stack w="48%" py="15px" border="1px solid black">
+          <Text
+            textAlign={"center"}
+            fontSize={"30px"}
+            fontWeight={"semibold"}
+            color="rgb(85,85,85)"
+          >
+            Backend Development
+          </Text>
+          <Flex></Flex>
+        </Stack>
+      </Flex>
     </Stack>
   );
 }

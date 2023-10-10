@@ -3,6 +3,7 @@ import { Flex, Stack, Text, Image, Button } from "@chakra-ui/react";
 import img from "../assets/image.jpg";
 import education from "../assets/education.png";
 import experience from "../assets/experience.png";
+import arrow from "../assets/arrow.png";
 
 export default function About() {
   return (
@@ -11,14 +12,15 @@ export default function About() {
         textAlign={"center"}
         fontSize={["12px", "14px", "17px"]}
         color="rgb(85,85,85)"
+        className="about"
       >
         Get To Know More
       </Text>
       <Text textAlign={"center"} className="name" fontWeight={"bold"}>
         About Me
       </Text>
-      <Flex py={["10px", "20px", "50px"]} className="about">
-        <Flex className="about_img_box">
+      <Flex py={["10px", "20px", "50px"]} className="aboutme">
+        <Flex className="about_img_box" data-aos="fade-right">
           <Image
             src={img.src}
             alt="img"
@@ -27,7 +29,7 @@ export default function About() {
             className="about_img"
           />
         </Flex>
-        <Stack justify={"center"}>
+        <Stack justify={"center"} data-aos="fade-left">
           <Flex
             justify={["space-evenly"]}
             align="center"
@@ -82,6 +84,17 @@ export default function About() {
           </Text>
         </Stack>
       </Flex>
+      <Image
+        src={arrow.src}
+        alt="arrow"
+        position="absolute"
+        bottom={["40px", "100px", "30px"]}
+        right={["25px", "40px", "100px"]}
+        w="30px"
+        h="30px"
+        display={["none", "none", "block"]}
+        data-aos="fade-left"
+      />
     </Stack>
   );
 }

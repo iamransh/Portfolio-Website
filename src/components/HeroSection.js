@@ -4,20 +4,11 @@ import React, { useEffect, useState } from "react";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import arrow from "../assets/arrow.png";
+import { useRouter } from "next/router";
 
 export default function HeroSection() {
-  const [display, setDisplay] = useState("flex");
-
-  const handelClick = () => {
-    setDisplay("none");
-  };
-
-  const handelScroll = () => {
-    setDisplay("none");
-  };
-
   return (
-    <Flex w="100%" className="hero" position="relative" onScroll={handelScroll}>
+    <Flex w="100%" className="hero" position="relative">
       <Flex
         // w={["100%", "100%", "50%"]}
         justify={"center"}
@@ -97,15 +88,13 @@ export default function HeroSection() {
       <Image
         src={arrow.src}
         alt="arrow"
-        id="arrow"
         position="absolute"
         bottom={["40px", "100px", "80px"]}
         right={["25px", "40px", "100px"]}
         w="30px"
         h="30px"
-        cursor="pointer"
-        display={["none", "none", display]}
-        onClick={handelClick}
+        display={["none", "none", "block"]}
+        data-aos="fade-left"
       />
     </Flex>
   );
