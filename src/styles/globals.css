@@ -1,9 +1,9 @@
 .navbar_link:hover{
-    color:rgb(100,100,100);
-    border-bottom: 2px solid rgb(100,100,100);
+    color:rgb(120,120,120);
+    border-bottom: 2px solid rgb(120,120,120);
 }
 .navbar_link_drawer:hover{
-    color:rgb(100,100,100);
+    color:rgb(120,120,120);
 }
 .button1:hover{
     background-color: black !important;
@@ -146,7 +146,7 @@
         padding: 10px 10%;
     }
     .logo{
-        font-size: 5vw;
+        font-size: 5.5vw;
     }
     .hello{
         font-size: 7vw;

@@ -43,7 +43,7 @@ export default function HeroSection() {
           Pranav Srivastav
         </Text>
         <Text fontWeight={"semibold"} className="web" color="rgb(85,85,85)">
-          Web Developer
+          Software Developer
         </Text>
         <Flex mt="15px" flexDir={["column", "row", "row"]}>
           <Button
@@ -94,7 +94,7 @@ export default function HeroSection() {
         w="30px"
         h="30px"
         display={["none", "none", "block"]}
-        data-aos="fade-left"
+        // data-aos="fade-left"
       />
     </Flex>
   );

@@ -7,25 +7,20 @@ import {
   CircularProgress,
   CircularProgressLabel,
 } from "@chakra-ui/progress";
+import checkmark from "../assets/checkmark.png";
 // import ApexCharts from "apexcharts";
 
 export default function Skills() {
   return (
-    <Stack w="100%" spacing={0} px="10%" pb="50px">
+    <Stack w="100%" spacing={0} px="10%" pb="50px" data-aos="zoom-in">
       <Text
         textAlign={"center"}
         fontSize={["12px", "14px", "17px"]}
         color="rgb(85,85,85)"
-        data-aos="zoom-in"
       >
         Explore My
       </Text>
-      <Text
-        textAlign={"center"}
-        className="name"
-        fontWeight={"bold"}
-        data-aos="zoom-in"
-      >
+      <Text textAlign={"center"} className="name" fontWeight={"bold"} mb="30px">
         Skills
       </Text>
       {/* <Stack w="100%" py={["10px", "20px", "50px"]}>
@@ -234,8 +229,19 @@ export default function Skills() {
           </Text>
         </Stack>
       </Stack> */}
-      <Flex w="100%" justify={"space-between"}>
-        <Stack w="48%" py="15px" border="1px solid black">
+      <Flex
+        w="100%"
+        justify={["space-between"]}
+        align="center"
+        flexDir={["column", "column", "row"]}
+      >
+        <Stack
+          w={["100%", "80%", "48%"]}
+          py="15px"
+          my="15px"
+          border="1px solid rgb(85,85,85)"
+          borderRadius={"30px"}
+        >
           <Text
             textAlign={"center"}
             fontSize={"30px"}
@@ -244,9 +250,70 @@ export default function Skills() {
           >
             Frontend Development
           </Text>
-          <Flex></Flex>
+          <Flex justify={"space-evenly"} flexWrap={"wrap"}>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+          </Flex>
         </Stack>
-        <Stack w="48%" py="15px" border="1px solid black">
+        <Stack
+          w={["100%", "80%", "48%"]}
+          py="15px"
+          my="15px"
+          border="1px solid rgb(85,85,85)"
+          borderRadius={"30px"}
+        >
           <Text
             textAlign={"center"}
             fontSize={"30px"}
@@ -255,7 +322,213 @@ export default function Skills() {
           >
             Backend Development
           </Text>
-          <Flex></Flex>
+          <Flex justify={"space-evenly"} flexWrap={"wrap"}>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+          </Flex>
+        </Stack>
+      </Flex>
+      <Flex
+        w="100%"
+        justify={["space-between"]}
+        align="center"
+        flexDir={["column", "column", "row"]}
+      >
+        <Stack
+          w={["100%", "80%", "48%"]}
+          py="15px"
+          my="15px"
+          border="1px solid rgb(85,85,85)"
+          borderRadius={"30px"}
+        >
+          <Text
+            textAlign={"center"}
+            fontSize={"30px"}
+            fontWeight={"semibold"}
+            color="rgb(85,85,85)"
+          >
+            Languages
+          </Text>
+          <Flex justify={"space-evenly"} flexWrap={"wrap"}>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+          </Flex>
+        </Stack>
+        <Stack
+          w={["100%", "80%", "48%"]}
+          py="15px"
+          my="15px"
+          border="1px solid rgb(85,85,85)"
+          borderRadius={"30px"}
+        >
+          <Text
+            textAlign={"center"}
+            fontSize={"30px"}
+            fontWeight={"semibold"}
+            color="rgb(85,85,85)"
+          >
+            Machine Learning
+          </Text>
+          <Flex justify={"space-evenly"} flexWrap={"wrap"}>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+            <Flex w="110px" justify={"space-between"} mx="60px" my="20px">
+              <Image w="30px" h="30px" src={checkmark.src} alt="checkmark" />
+              <Stack gap={0}>
+                <Text fontSize={"20px"} fontWeight={"bold"}>
+                  HTML
+                </Text>
+                <Text>Advance</Text>
+              </Stack>
+            </Flex>
+          </Flex>
         </Stack>
       </Flex>
     </Stack>

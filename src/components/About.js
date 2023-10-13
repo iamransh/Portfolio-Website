@@ -7,7 +7,7 @@ import arrow from "../assets/arrow.png";
 
 export default function About() {
   return (
-    <Stack w="100%" spacing={0} px="10%" pb="50px" data-aos="fade-up">
+    <Stack w="100%" spacing={0} px="10%" pb="50px" data-aos="zoom-in">
       <Text
         textAlign={"center"}
         fontSize={["12px", "14px", "17px"]}
@@ -20,7 +20,7 @@ export default function About() {
         About Me
       </Text>
       <Flex py={["10px", "20px", "50px"]} className="aboutme">
-        <Flex className="about_img_box" data-aos="fade-right">
+        <Flex className="about_img_box">
           <Image
             src={img.src}
             alt="img"
@@ -29,7 +29,7 @@ export default function About() {
             className="about_img"
           />
         </Flex>
-        <Stack justify={"center"} data-aos="fade-left">
+        <Stack justify={"center"}>
           <Flex
             justify={["space-evenly"]}
             align="center"
@@ -93,7 +93,7 @@ export default function About() {
         w="30px"
         h="30px"
         display={["none", "none", "block"]}
-        data-aos="fade-left"
+        // data-aos="fade-left"
       />
     </Stack>
   );

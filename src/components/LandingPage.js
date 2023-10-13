@@ -1,6 +1,8 @@
 import React from "react";
 // import Navbar from "./Navbar";
 import dynamic from "next/dynamic";
+import Contact from "./Contact";
+import Projects from "./Projects";
 // import HeroSection from "./HeroSection";
 const Navbar = dynamic(() => import("./Navbar"), { ssr: false });
 const HeroSection = dynamic(() => import("./HeroSection"), { ssr: false });
@@ -14,8 +16,10 @@ export default function LandingPage() {
     <>
       <Navbar />
       <HeroSection />
-      <About />
       <Skills />
+      <Projects />
+      <About />
+      <Contact />
     </>
   );
 }
